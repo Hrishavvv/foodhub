@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { mockRestaurants, mockMenuItems } from '@/lib/mockData';
 import { motion, AnimatePresence } from 'framer-motion';
 
-export const SearchBar = () => {
+export const SearchBar = ({ iconOnly = false }: { iconOnly?: boolean }) => {
   const [search, setSearch] = useState('');
   const [suggestions, setSuggestions] = useState<Array<{ type: 'restaurant' | 'dish'; name: string; id?: string; itemId?: string }>>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -81,9 +81,14 @@ export const SearchBar = () => {
             onFocus={() => search.length >= 2 && setSuggestions.length > 0 && setShowSuggestions(true)}
             className="border-0 bg-transparent text-lg focus-visible:ring-0 focus-visible:ring-offset-0"
           />
-          <Button type="submit" size="lg" className="rounded-xl px-8">
-            <Search className="mr-2 h-5 w-5" />
-            Search
+          <Button
+            type="submit"
+            size={iconOnly ? 'icon' : 'lg'}
+            aria-label="Search"
+            className={iconOnly ? 'rounded-xl' : 'rounded-xl px-8'}
+          >
+            <Search className={iconOnly ? 'h-5 w-5' : 'mr-2 h-5 w-5'} />
+            {!iconOnly && 'Search'}
           </Button>
         </div>
       </form>
