@@ -416,6 +416,44 @@ export const mockMenuItems: MenuItem[] = [
     isVeg: true,
   },
 
+  // Additional beverages and ice creams for select restaurants
+  {
+    id: 'm72',
+    restaurantId: '1',
+    name: 'Coca-Cola 300ml',
+    description: 'Chilled soft drink',
+    price: 40,
+    category: 'Beverages',
+    isVeg: true,
+  },
+  {
+    id: 'm73',
+    restaurantId: '1',
+    name: 'Sprite 300ml',
+    description: 'Lemon-lime soft drink',
+    price: 40,
+    category: 'Beverages',
+    isVeg: true,
+  },
+  {
+    id: 'm74',
+    restaurantId: '1',
+    name: 'Ice Cream - Vanilla',
+    description: 'Classic vanilla scoop',
+    price: 80,
+    category: 'Desserts',
+    isVeg: true,
+  },
+  {
+    id: 'm75',
+    restaurantId: '1',
+    name: 'Ice Cream - Chocolate',
+    description: 'Rich chocolate scoop',
+    price: 90,
+    category: 'Desserts',
+    isVeg: true,
+  },
+
   // Biryani House (Restaurant 6)
   {
     id: 'm32',
@@ -473,6 +511,35 @@ export const mockMenuItems: MenuItem[] = [
     isVeg: true,
   },
 
+  // Beverages and ice creams for Biryani House (6)
+  {
+    id: 'm76',
+    restaurantId: '6',
+    name: 'Pepsi 300ml',
+    description: 'Chilled soft drink',
+    price: 40,
+    category: 'Beverages',
+    isVeg: true,
+  },
+  {
+    id: 'm77',
+    restaurantId: '6',
+    name: 'Sprite 300ml',
+    description: 'Lemon-lime soft drink',
+    price: 40,
+    category: 'Beverages',
+    isVeg: true,
+  },
+  {
+    id: 'm78',
+    restaurantId: '6',
+    name: 'Matka Kulfi',
+    description: 'Traditional Indian ice cream',
+    price: 120,
+    category: 'Desserts',
+    isVeg: true,
+  },
+
   // Tandoor Junction (Restaurant 7)
   {
     id: 'm38',
@@ -481,6 +548,35 @@ export const mockMenuItems: MenuItem[] = [
     description: 'Grilled cottage cheese marinated in spices',
     price: 290,
     category: 'Starters',
+    isVeg: true,
+  },
+
+  // Drinks and ice cream for Mumbai Chaat (4)
+  {
+    id: 'm79',
+    restaurantId: '4',
+    name: 'Coca-Cola 300ml',
+    description: 'Chilled soft drink',
+    price: 40,
+    category: 'Beverages',
+    isVeg: true,
+  },
+  {
+    id: 'm80',
+    restaurantId: '4',
+    name: 'Thums Up 300ml',
+    description: 'Spicy cola drink',
+    price: 45,
+    category: 'Beverages',
+    isVeg: true,
+  },
+  {
+    id: 'm81',
+    restaurantId: '4',
+    name: 'Softy Ice Cream',
+    description: 'Vanilla soft serve',
+    price: 60,
+    category: 'Desserts',
     isVeg: true,
   },
   {

@@ -78,7 +78,7 @@ export const SearchBar = ({ iconOnly = false }: { iconOnly?: boolean }) => {
             placeholder="Search for restaurants or dishes..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            onFocus={() => search.length >= 2 && setSuggestions.length > 0 && setShowSuggestions(true)}
+            onFocus={() => search.length >= 2 && suggestions.length > 0 && setShowSuggestions(true)}
             className="border-0 bg-transparent text-lg focus-visible:ring-0 focus-visible:ring-offset-0"
           />
           <Button
